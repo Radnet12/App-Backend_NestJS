@@ -6,11 +6,10 @@ import { UsersModule } from "./users/users.module";
 import { RolesModule } from "./roles/roles.module";
 import { Role } from "./roles/roles.model";
 import { UserRoles } from "./roles/userRoles.model";
-import { AuthController } from './auth/auth.controller';
 import { AuthModule } from './auth/auth.module';
 
 @Module({
-  controllers: [AuthController],
+  controllers: [],
   providers: [],
   imports: [
     ConfigModule.forRoot({
